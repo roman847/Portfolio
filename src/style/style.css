@@ -1,0 +1,136 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+ul,
+p,
+a,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: 1440px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header .container {
+  display: flex;
+  color: #fff;
+  max-width: 1440px;
+  height: 90px;
+  margin: 0 auto;
+  padding: 0 20px;
+  background-image: url("../assets/img/bg.png");
+  background-position: center 0;
+  background-repeat: no-repeat;
+  align-items: center;
+}
+header .container img {
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: 0.3s;
+  cursor: pointer;
+}
+header .container img:hover {
+  filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
+}
+header .container .header-nav {
+  margin-left: auto;
+  width: 500px;
+}
+header .container .header-nav .nav-list {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  padding: 0px 15px 0px 15px;
+}
+header .container .header-nav .nav-list a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: Inter;
+  font-weight: 100;
+  transition: 0.3s;
+}
+header .container .header-nav .nav-list a:hover {
+  color: #bdae82;
+}
+header .container .header-nav nav {
+  display: flex;
+}
+header .container .switch-lang {
+  display: flex;
+  justify-content: space-between;
+  width: 70px;
+}
+header .container .switch-lang p {
+  cursor: pointer;
+  font-size: 20px;
+  font-family: Inter;
+  margin: 0;
+}
+header .container .switch-lang p:hover {
+  color: #bdae82;
+}
+
+main .container {
+  max-width: 1440px;
+  height: 910px;
+  padding: 160px 0px 0px 80px;
+  background-image: url("../assets/img/bg.png");
+  background-position: center -90px;
+  background-repeat: no-repeat;
+  background-color: #000;
+  box-sizing: border-box;
+}
+main .container .hero .hero-content {
+  max-width: 500px;
+  min-height: 330px;
+  padding-right: 30px;
+  box-sizing: border-box;
+}
+main .container .hero .hero-content h1 {
+  color: #fff;
+  font-family: Merriweather;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 130px;
+}
+main .container .hero .hero-content p {
+  color: #fff;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 40px;
+}
+main .container .hero .hero-content button {
+  border: none;
+  background-color: #bdae82;
+  width: 220px;
+  min-height: 55px;
+  margin-top: 30px;
+  font-size: 20px;
+  font-family: Inter;
+  cursor: pointer;
+  transition: 0.3s;
+}
+main .container .hero .hero-content button:hover {
+  color: #fff;
+}

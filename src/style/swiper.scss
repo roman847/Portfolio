@@ -1,0 +1,54 @@
+$gold: rgb(189, 174, 130);
+$black: #000;
+$white: #fff;
+$font-size-20: 20px;
+$font-size-18: 18px;
+
+.container-slider {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  position: relative;
+  .swiper-container {
+    overflow-x: hidden;
+    gap: 10px;
+    .swiper-slide {
+      .swiper-slide-container {
+        .player__video {
+          box-sizing: border-box;
+          width: 100%;
+          border: solid $gold 2px;
+        }
+      }
+    }
+  }
+  .swiper-pagination {
+    top: 110%;
+    width: 100%;
+    span {
+      width: 20px;
+      height: 20px;
+      background-color: #fff;
+    }
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: #fff;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container-slider {
+    .swiper-pagination {
+      span {
+        width: 12px;
+        height: 12px;
+      }
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+      &::after {
+        font-size: 25px;
+      }
+    }
+  }
+}
